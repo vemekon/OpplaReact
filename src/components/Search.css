@@ -1,0 +1,82 @@
+body{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+     
+    }
+    .search{
+      display:flex;
+      flex-direction: column;
+      min-width:300px;
+      width:40%;
+      height:60vh;
+      justify-items: center;
+      padding:1rem;
+      background: white;
+      border-radius: 10px;
+      color: rgb(80, 75, 75);
+    }
+    .search-items{
+      display: flex;
+      justify-content: flex-start;
+      margin: 0.5rem 1rem;
+    }
+    .search-items .item{
+      padding:0.5rem 1rem;
+      position: relative;
+      cursor: pointer;
+    
+      
+    }
+    .search-items .item:after{
+      content:'';
+      width:0;
+      height:2px;
+      background: midnightblue;
+      position: absolute;  
+      bottom:0;
+      left:0;
+      transition: 0.2s ease-in;
+    
+    }
+    .search-items .item:hover{
+      color: midnightblue;
+    }
+    .search-items .item:hover:after{
+      width:100%
+    }
+    
+    .search-input{
+      padding:0.2rem 1rem;
+      width:100%;
+      border:15px;
+      
+    }
+    .search-input input{
+      outline: none;
+      padding: 0.3rem 1rem;
+      border :0.5px solid  gray;;
+      font-size: 0.9rem;
+      width:100%;
+      background: transparent;
+      border-radius: 5px;
+      line-height:2rem;
+    }
+    .search-price , .search-bedroom{
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+    }
+    .search-price select , .search-bedroom select{
+      margin:0.4rem 0rem;
+      font-size: 0.8rem;
+      height: 2.2rem;
+      width:100%;
+      outline: none;
+      background: transparent;
+      border: 0.5px  solid gray;
+      border-radius: 4px;
+      
+      
+    
+    }
